@@ -1,2 +1,68 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="banner" class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-offset-4 col-sm-4" id="logo">
+          <img src="asc_logo.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper" id="info">
+    <div class="container">
+      <div class="row">
+        <h2>Dates</h2>
+        <div class="date-box">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card-date">
+              <h3>24th November 2018</h3>
+              <p>Southampton</p>
+              <div id='map' style='width: 400px; height: 300px;'></div>
+              <script>
+              mapboxgl.accessToken = 'pk.eyJ1IjoidmVuZGVkcmF1ZyIsImEiOiJjam9rMXVidTIwOGM0M3Z0ODI2MnFvZmwxIn0.v86jrsx5SnfbH6ku9AhvrQ';
+              var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v10'
+              });
+              </script>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card-date">
+              <h3>15th December 2018</h3>
+              <p>New Cross</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card-date">
+              <h3>3rd December 2018</h3>
+              <p>New Cross</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row right">
+        <h2>Gallery</h2>
+        <!-- <div class="col-sm-4"> -->
+          <p>A simple app, <strong>very simple</strong> app</p>
+        <!-- </div> -->
+      </div>
+
+      <div class="row">
+        <h2>Social</h2>
+        <!-- <div class="col-sm-4"> -->
+          <p>An awesome app, <strong>very awesome</strong> app</p>
+          <a class="twitter-timeline" data-width="600" data-height="600" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/WeAreASC?ref_src=twsrc%5Etfw">Tweets by WeAreASC</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <!-- </div> -->
+      </div>
+
+      <div class="row right">
+        <h2>Contact us</h2>
+        <p>A beautiful app, <strong>very beautiful</strong> app</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>This is a playground landing ©Le Wagon</p>
+  </div>

@@ -3,3 +3,86 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+/* style.css */
+body {
+  background-color: rgb(20,20,20);
+  color: #f8f8f8;
+  font-size: 25px;
+  font-family: Helvetica;
+}
+h1 {
+  font-family: Courier;
+  color: red;
+  font-weight: lighter;
+  font-size: 10px;
+}
+h2 {
+  font-family: Courier;
+  color: #da5827;
+  font-weight: lighter;
+  /*text-shadow: 0px 0px 3px black;*/
+  font-size: 25px;
+}
+a {
+  color: yellow;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+
+#banner {
+  width: 80vw;
+  height: 92vh;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url("images/banner.jpg");
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  box-shadow: 0.5px 1px 25px black;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#logo {
+  display: flex;
+  justify-content: space-around;
+}
+
+#banner p {
+  color: white;
+  opacity: 0.8;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+#info {
+  width: 80vw;
+  height: 90vh;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#footer{
+  padding: 30px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
+}
+.left{
+
+}
+.right{
+  text-align: right;
+}
+.date-box {
+  padding: 50px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+}
+.card-date {
+  width: auto;
+  height: 200px;
+}
