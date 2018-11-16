@@ -34,7 +34,7 @@ a:hover {
 #banner {
   width: 80vw;
   height: 92vh;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url("images/banner.jpg");
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url("https://res.cloudinary.com/dwdxdhdk-14/image/upload/v1542379758/banner.jpg");
   background-size: cover;
   color: white;
   text-shadow: 1px 1px 5px black;
@@ -57,7 +57,7 @@ a:hover {
 
 #info {
   width: 80vw;
-  height: 90vh;
+  height: auto;
   margin-right: auto;
   margin-left: auto;
 }
