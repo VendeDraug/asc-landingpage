@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
     <link href='style.css' rel='stylesheet'>
     <title>After Smoke Clears</title>
   </head>
@@ -27,6 +29,14 @@
             <div class="card-date">
               <h3>24th November 2018</h3>
               <p>Southampton</p>
+              <div id='map' style='width: 400px; height: 300px;'></div>
+              <script>
+              mapboxgl.accessToken = 'pk.eyJ1IjoidmVuZGVkcmF1ZyIsImEiOiJjam9rMXVidTIwOGM0M3Z0ODI2MnFvZmwxIn0.v86jrsx5SnfbH6ku9AhvrQ';
+              var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v10'
+              });
+              </script>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-4">
